@@ -5,6 +5,7 @@ from pygame.locals import *
 
 # colours
 ANT=(255,0,0)       # "head"
+LINE=(220,220,100)  # line
 ON=(230,230,100)    # filled cell
 OFF=(255,255,255)   # empty (unvisited) cell
 MET=(255,255,200)   # empty (visited) cell
@@ -16,7 +17,7 @@ colour=OFF
 #   - n rows
 #   - m columns
 a=10
-b=a-3
+b=a-1
 n=100
 m=100
 
@@ -86,8 +87,8 @@ def lines():
     global DISPLAY
     for i in range(n+1):
         for j in range(m+1):
-            pygame.draw.line(DISPLAY,ON,(a*i,0),(a*i,a*n),1)
-            pygame.draw.line(DISPLAY,ON,(0,a*j),(a*m,a*j),1)
+            pygame.draw.line(DISPLAY,LINE,(a*i,0),(a*i,a*n),1)
+            pygame.draw.line(DISPLAY,LINE,(0,a*j),(a*m,a*j),1)
 
 def main():
     global colour
