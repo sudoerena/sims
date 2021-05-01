@@ -87,8 +87,8 @@ def lines():
     global DISPLAY
     for i in range(n+1):
         for j in range(m+1):
-            pygame.draw.line(DISPLAY,LINE,(a*i,0),(a*i,a*n),1)
-            pygame.draw.line(DISPLAY,LINE,(0,a*j),(a*m,a*j),1)
+            pygame.draw.line(DISPLAY,LINE,(a*i,0),(a*i,a*m),1)
+            pygame.draw.line(DISPLAY,LINE,(0,a*j),(a*n,a*j),1)
 
 def main():
     global colour
